@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory , IndexLink} from 'react-router'
+import ContactComponent from './components/ContactComponent.js';
 
 
 class App extends Component {
@@ -15,12 +16,12 @@ class App extends Component {
             <Route path='secondProject' component={SecondProject} />
           </Route>
           <Route path='gallery' component={Gallery} />
+          <Route path='contact' component={ContactComponent} />
 
           <Route path='address' component={Address}>
             <IndexRoute component={TwitterFeed} />
             <Route path='instagram' component={Instagram} />
           </Route>
-
           <Route path='/namedComponent' component={NamedComponents}>
             <IndexRoute components={{ title: Title, subTitle: SubTitle }} />
           </Route>
@@ -37,6 +38,7 @@ const Container = (props) => <div>
   <IndexLink activeClassName='active' to='/skills'>SKILLS</IndexLink>&nbsp;
   <IndexLink activeClassName='active' to='/projects'>PROJECTS</IndexLink>&nbsp;
   <IndexLink activeClassName='active' to='/gallery'>GALLERY</IndexLink>&nbsp;
+  <IndexLink activeClassName="active" to='/contact'>CONTACT</IndexLink>&nbsp;
 
   <IndexLink activeClassName='active' to='/address'>ADDREPSS</IndexLink>&nbsp;
   <IndexLink activeClassName='active' to='/about'>ABOUT</IndexLink>
@@ -59,8 +61,8 @@ const Projects = (props) =><div>
 const ProjectLandingPage = () => <h3>Project Landing Page</h3>
 const FirstProject = () => <h3>FirstProject</h3>
 const SecondProject = () => <h3>SecondProject</h3>
-
 const Gallery = () => <h3>Gallery</h3>
+const Contact = () =><h3>Contact</h3>
 
 const Address = (props) => <div>
   <br />
