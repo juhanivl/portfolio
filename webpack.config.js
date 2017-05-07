@@ -1,8 +1,12 @@
+path = require('path');
+
+
 module.exports = {
   entry: './app/main.js',
   output: {
-    path: './app',
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/static/',
   },
   devServer: {
     inline: true,
