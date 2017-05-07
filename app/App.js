@@ -6,7 +6,6 @@ import Skills from './components/Skills.js';
 import Projects from './components/Projects.js'
 import Gallery from './components/Gallery.js'
 import ContactComponent from './components/Contact.js';
-import Footer from './components/Footer';
 
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
@@ -141,10 +140,6 @@ const Container = (props) =>
     <div style={containerStyle.section}>
       {props.children}
     </div>
-
-    <div style={containerStyle.footer}>
-      <Footer/>
-    </div>
   </div>
 
 const AppBarExample = () => (
@@ -176,12 +171,20 @@ const KebabMenu = () => (
 /**COMPONENTS*/
 const NamedComponents = (props) => (
   <div>
-    {props.title}<br />
+    {props.title}
+    <br/>
+    <a href="https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr" target="_blank">  Setting up React JS envinronment</a><br/>
+    <a href="https://github.com/callemall/material-ui/issues/4819" target="_blank">Adding Roboto Font</a><br/>
+    <a href="http://www.material-ui.com/#/" target="_blank">Material UI</a><br/>
+    <a href="http://ccoenraets.github.io/es6-tutorial/setup-webpack/" target="_blank">Setting Up Webpack</a><br/>
+
     {props.subTitle}
+    <a href="  https://medium.com/@dabit3/beginner-s-guide-to-react-router-53094349669" target="_blank">Beginner’s Guide to React Router</a>
+
   </div>
 )
-const Title = () => (<h1>Hello from Title Component</h1>)
-const SubTitle = () => (<h1>Hello from SubTitle Component</h1>)
+const Title = () => (<h1>Here are some of my favourite tutorials</h1>)
+const SubTitle = () => (<h1>These are the one's I used with this page</h1>)
 const NotFound = () => (<h1>404.. This page is not found!</h1>)
 
 /*
