@@ -32,42 +32,42 @@ export default class Gallery extends Component {
 
     const tilesData = [
       {
-        img: './components/images/51pegasib.jpg',
+        img: './images/51pegasib.jpg',
         title: '51 Pegasi B',
         author: 'Nasa',
       },
       {
-        img: './components/images/ceres.jpg',
+        img: './images/ceres.jpg',
         title: 'Ceres',
         author: 'Nasa',
       },
       {
-        img: './components/images/enceladus.jpg',
+        img: './images/enceladus.jpg',
         title: 'Enceladus',
         author: 'Nasa',
       },
       {
-        img: './components/images/kepler16b.jpg',
+        img: './images/kepler16b.jpg',
         title: 'Kepler 16b',
         author: 'Nasa',
       },
       {
-        img: './components/images/kepler186f.jpg',
+        img: './images/kepler186f.jpg',
         title: 'Kepler-186f',
         author: 'Nasa',
       },
       {
-        img: './components/images/superearth.jpg',
+        img: './images/superearth.jpg',
         title: 'Superearth',
         author: 'Nasa',
       },
       {
-        img: './components/images/titan.jpg',
+        img: './images/titan.jpg',
         title: 'Titan',
         author: 'Nasa',
       },
       {
-        img: './components/images/jupiter.jpg',
+        img: './images/jupiter.jpg',
         title: 'Jupiter',
         author: 'Nasa',
       },

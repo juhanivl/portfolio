@@ -116,7 +116,7 @@ export default class ContactComponent extends Component {
             You can also check more about from my CV!
           </p>
           <p>
-            <a href="./components/resources/CV.pdf" download="FileName">Download it here!</a>
+            <a href="./resources/CV.pdf" download="FileName">Download it here!</a>
           </p>
 
           <input type="text" value={this.state.firstNameInput} id="firstNameInput"  onChange={this.handleChange} placeholder="First name" maxLength="25"></input>
